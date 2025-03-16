@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'rest_framework.authtoken',
-    'proiles_api',
+    'profiles_api',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'proiles_project.urls'
+ROOT_URLCONF = 'profiles_project.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'proiles_project.wsgi.application'
+WSGI_APPLICATION = 'profiles_project.wsgi.application'
 
 
 # Database
@@ -122,3 +122,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL= 'profiles_api.UserProfile'
